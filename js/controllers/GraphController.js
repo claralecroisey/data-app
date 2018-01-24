@@ -1,3 +1,7 @@
-app.controller('GraphController', ['$scope', function($scope) {
-	$scope.graph = "This is a graph!";
+app.controller('GraphController', ['$scope', 'audience', function($scope, audience) {
+
+	audience.getAudience.then(function(data) {
+		$scope.mydata = data;
+	});
+
 }]);
