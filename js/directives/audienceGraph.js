@@ -4,6 +4,9 @@ app.directive("audienceGraph", function() {
     scope: {
       info: '='
     },
-    templateUrl: "js/directives/audienceGraph.html"
+    templateUrl: "js/directives/audienceGraph.html",
+    link: function(scope, element, attrs) {
+
+	}
   };
 });
