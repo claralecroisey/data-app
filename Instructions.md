@@ -22,35 +22,35 @@ Email address: clara.lecroisey@imt-atlantique.net
 
 Files Architecture: (using the AngularJS framework)
 
-data-app
-├── index.html
-├── Instructions.md
-├── css
-│   └── style.css
-├── img
-│   └── networks.jpg
-├── js
-│   ├── controllers
-│   │   └── AboutController.js
-│   │   └── GraphController.js
-│   │   └── HomeController.js
-│   ├── directives
-│   │   └── audienceGraph.html
-│   │   └── audienceGraph.js
-│   ├── services
-│   │   └── audience.js
-│   ├── vendor
-│   │   ├── angular-route.min.js
-│   │   ├── angular-route.min.js.mapa
-│   │   ├── angular.min.js
-│   │   └── ngular.min.js.map
-│   └── app.js
-└── json
-    └── audience.json
-└── views
-    ├── about.html
-    ├── graph.html
-    └── home.html
+data-app  
+├── index.html  
+├── Instructions.md  
+├── css  
+│   └── style.css  
+├── img  
+│   └── networks.jpg  
+├── js  
+│   ├── controllers  
+│   │   └── AboutController.js  
+│   │   └── GraphController.js  
+│   │   └── HomeController.js  
+│   ├── directives  
+│   │   └── audienceGraph.html  
+│   │   └── audienceGraph.js  
+│   ├── services  
+│   │   └── audience.js  
+│   ├── vendor  
+│   │   ├── angular-route.min.js  
+│   │   ├── angular-route.min.js.mapa  
+│   │   ├── angular.min.js  
+│   │   └── ngular.min.js.map  
+│   └── app.js  
+└── json  
+    └── audience.json  
+└── views  
+    ├── about.html  
+    ├── graph.html  
+    └── home.html  
 
 
 #####Instructions#####
