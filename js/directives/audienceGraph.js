@@ -14,9 +14,6 @@ app.directive("audienceGraph", function() {
 		    width = 960 - margin.left - margin.right,
 		    height = 500 - margin.top - margin.bottom;
 
-		// parse the date / time
-		//var parseTime = d3.timeParse("%d-%b-%y");
-
 		// set the ranges
 		var x = d3.scaleTime().range([0, width]);
 		var y = d3.scaleLinear().range([height, 0]);
@@ -38,10 +35,16 @@ app.directive("audienceGraph", function() {
 			    .attr("transform",
 			          "translate(" + margin.left + "," + margin.top + ")");
 
+			// parse the date / time
+			var parseTime = d3.timeParse("%s");
+
 			// format the data
 			data.forEach(function(d) {
-			  d[0] = +d[0];
-			  d[1] = +d[1];
+				//var date = new Date(0);
+				//date.setUTCSeconds(d[0]);
+			  	d[0] = parseTime(d[0]);
+			  	//d[0] = +d[0];
+			  	d[1] = +d[1];
 			});
 
 			// Scale the range of the data
@@ -65,7 +68,7 @@ app.directive("audienceGraph", function() {
 
         };
 
-        //the data is fetched from info.audience which is an array of arrays [ [datetime, users], [datetime, audience],... ]
+        //the data is fetched from info.audience which is an array of arrays [ [datetime, users], [datetime, users],... ]
         drawChart(scope.info.audience);
 	}
   };
