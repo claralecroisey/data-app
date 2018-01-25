@@ -1,3 +1,8 @@
+/*
+Directive to display graph on the /graph page.
+Its view is included in the js/directives/audienceGraph.html template 
+*/
+
 app.directive("audienceGraph", function() {
   return {
     restrict: 'E',
