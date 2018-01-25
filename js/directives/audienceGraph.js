@@ -28,7 +28,7 @@ app.directive("audienceGraph", function() {
 			// append the svg obgect to the body of the page
 			// appends a 'group' element to 'svg'
 			// moves the 'group' element to the top left margin
-			var svg = d3.select("audience-graph").append("svg")
+			var svg = d3.select("#graph").append("svg")
 			    .attr("width", width + margin.left + margin.right)
 			    .attr("height", height + margin.top + margin.bottom)
 			  .append("g")
@@ -36,14 +36,16 @@ app.directive("audienceGraph", function() {
 			          "translate(" + margin.left + "," + margin.top + ")");
 
 			// parse the date / time
-			var parseTime = d3.timeParse("%s");
+			var parseDate = d3.timeParse("%s"); //parses the date to seconds (should be milliseconds)
+			//var formatDate = d3.timeFormat("%b-%Y");
 
 			// format the data
 			data.forEach(function(d) {
-				//var date = new Date(0);
-				//date.setUTCSeconds(d[0]);
-			  	d[0] = parseTime(d[0]);
-			  	//d[0] = +d[0];
+			  	//var time = +d[0] * 1000;
+			  	//var date = new Date(time);
+			  	//d[0] = parseDate(date);
+			  	d[0] = parseDate(d[0]); //parses the Date object into the right format
+			  	//d[0] = formatDate(d[0]);
 			  	d[1] = +d[1];
 			});
 

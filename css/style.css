@@ -11,3 +11,18 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+#graph {
+	text-align: center;
+}
+
+svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
