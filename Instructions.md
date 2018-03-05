@@ -1,7 +1,7 @@
 # data-app
 
 
-#####About#####
+### About
 
 This is a Simple Page Application for the given Technical test which displays graphs of consumers' data.
 Tools used :
@@ -12,13 +12,13 @@ Tools used :
 (More information on /about page)
 
 
-#####Contact Info#####
+### Contact Info
 
 Name: Clara Lecroisey
 Email address: clara.lecroisey@imt-atlantique.net
 
 
-#####Description#####
+### Description
 
 Files Architecture: (using the AngularJS framework)
 
@@ -53,7 +53,7 @@ data-app
     └── home.html  
 
 
-#####Instructions#####
+## Instructions
 
 You need to run a server to see the app. 
 
@@ -69,4 +69,4 @@ You need to run a server to see the app.
 
 
 
-###Thank you for reading and running my code!###
+# Thank you for reading and running my code!
